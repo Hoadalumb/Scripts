@@ -1,58 +1,167 @@
 {
+    "MoreInfoUri": "https://www.google.de",
     "Rules": [
       {
         "SettingName": "EDRSensorRunning",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "EDR Sensor is not running",
+            "Description": "Microsoft Defender for Endpoint (EDR) sensor is not running. Restart the 'Sense' service using PowerShell: Restart-Service sense -Force."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "EDR-Sensor läuft nicht",
+            "Description": "Der Microsoft Defender für Endpoint (EDR)-Sensor ist nicht aktiv. Starten Sie den 'Sense'-Dienst mit PowerShell neu: Restart-Service sense -Force."
+          }
+        ]
       },
       {
         "SettingName": "CloudConnected",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Device is not connected to Defender Cloud",
+            "Description": "The device is not reporting to Microsoft Defender for Endpoint. Verify network connectivity and check Defender settings."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Gerät ist nicht mit Defender Cloud verbunden",
+            "Description": "Das Gerät sendet keine Daten an Microsoft Defender für Endpoint. Überprüfen Sie die Netzwerkverbindung und Defender-Einstellungen."
+          }
+        ]
       },
       {
         "SettingName": "RealTimeProtectionEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Real-Time Protection is disabled",
+            "Description": "Enable Microsoft Defender Real-Time Protection: Set-MpPreference -DisableRealtimeMonitoring $false."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Echtzeitschutz ist deaktiviert",
+            "Description": "Aktivieren Sie den Microsoft Defender Echtzeitschutz: Set-MpPreference -DisableRealtimeMonitoring $false."
+          }
+        ]
       },
       {
         "SettingName": "ASRBlockingEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "ASR Rules are not enforced",
+            "Description": "Attack Surface Reduction (ASR) rules should be set to block mode. Use: Set-MpPreference -AttackSurfaceReductionRules_Actions 1."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "ASR-Regeln werden nicht erzwungen",
+            "Description": "Attack Surface Reduction (ASR)-Regeln sollten im Block-Modus sein. Verwenden Sie: Set-MpPreference -AttackSurfaceReductionRules_Actions 1."
+          }
+        ]
       },
       {
         "SettingName": "TamperProtectionEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Tamper Protection is disabled",
+            "Description": "Enable Tamper Protection via Microsoft Intune or manually in Windows Security settings."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Manipulationsschutz ist deaktiviert",
+            "Description": "Aktivieren Sie den Manipulationsschutz über Microsoft Intune oder in den Windows-Sicherheitseinstellungen."
+          }
+        ]
       },
       {
         "SettingName": "DefenderFirewallEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Windows Defender Firewall is disabled",
+            "Description": "Enable Defender Firewall using: Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled True."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Windows Defender Firewall ist deaktiviert",
+            "Description": "Aktivieren Sie die Windows Defender Firewall mit: Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled True."
+          }
+        ]
       },
       {
         "SettingName": "NetworkProtectionEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Network Protection is disabled",
+            "Description": "Enable Defender Network Protection: Set-MpPreference -EnableNetworkProtection Enabled."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Netzwerkschutz ist deaktiviert",
+            "Description": "Aktivieren Sie den Defender-Netzwerkschutz: Set-MpPreference -EnableNetworkProtection Enabled."
+          }
+        ]
       },
       {
         "SettingName": "EDRReportingEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "EDR Cloud Reporting is disabled",
+            "Description": "Ensure Microsoft Defender for Endpoint is properly enrolled in Microsoft Intune."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "EDR-Cloud-Berichterstattung ist deaktiviert",
+            "Description": "Stellen Sie sicher, dass Microsoft Defender für Endpoint ordnungsgemäß in Microsoft Intune registriert ist."
+          }
+        ]
       },
       {
         "SettingName": "ControlledFolderAccessEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true"
+        "Operand": "true",
+        "RemediationStrings": [
+          {
+            "Language": "en-US",
+            "Title": "Controlled Folder Access is disabled",
+            "Description": "Enable Ransomware Protection: Set-MpPreference -EnableControlledFolderAccess Enabled."
+          },
+          {
+            "Language": "de-DE",
+            "Title": "Überwachter Ordnerzugriff ist deaktiviert",
+            "Description": "Aktivieren Sie den Ransomware-Schutz: Set-MpPreference -EnableControlledFolderAccess Enabled."
+          }
+        ]
       }
     ]
   }
