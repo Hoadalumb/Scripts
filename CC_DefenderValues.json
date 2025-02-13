@@ -1,11 +1,11 @@
 {
-    "MoreInfoUri": "https://www.google.de",
     "Rules": [
       {
         "SettingName": "EDRSensorRunning",
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -42,6 +42,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -60,6 +61,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -78,6 +80,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -96,6 +99,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -114,6 +118,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
@@ -132,6 +137,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
