@@ -24,6 +24,7 @@
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
             "Language": "en_US",
