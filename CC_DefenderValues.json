@@ -1,0 +1,59 @@
+{
+    "Rules": [
+      {
+        "SettingName": "EDRSensorRunning",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "CloudConnected",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "RealTimeProtectionEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "ASRBlockingEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "TamperProtectionEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "DefenderFirewallEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "NetworkProtectionEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "EDRReportingEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      },
+      {
+        "SettingName": "ControlledFolderAccessEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true"
+      }
+    ]
+  }
+  
