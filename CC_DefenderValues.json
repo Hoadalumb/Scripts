@@ -20,29 +20,10 @@
         ]
       },
       {
-        "SettingName": "CloudConnected",
+        "SettingName": "RealTimeProtectionDisabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "true",
-        "MoreInfoUrl": "https://www.google.de",
-        "RemediationStrings": [
-          {
-            "Language": "en_US",
-            "Title": "Device is not connected to Defender Cloud",
-            "Description": "The device is not reporting to Microsoft Defender for Endpoint. Verify network connectivity and check Defender settings."
-          },
-          {
-            "Language": "de_DE",
-            "Title": "Gerät ist nicht mit Defender Cloud verbunden",
-            "Description": "Das Gerät sendet keine Daten an Microsoft Defender für Endpoint. Überprüfen Sie die Netzwerkverbindung und Defender-Einstellungen."
-          }
-        ]
-      },
-      {
-        "SettingName": "RealTimeProtectionEnabled",
-        "Operator": "IsEquals",
-        "DataType": "Boolean",
-        "Operand": "true",
+        "Operand": "false",
         "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {
@@ -54,25 +35,6 @@
             "Language": "de_DE",
             "Title": "Echtzeitschutz ist deaktiviert",
             "Description": "Aktivieren Sie den Microsoft Defender Echtzeitschutz: Set-MpPreference -DisableRealtimeMonitoring $false."
-          }
-        ]
-      },
-      {
-        "SettingName": "ASRBlockingEnabled",
-        "Operator": "IsEquals",
-        "DataType": "Boolean",
-        "Operand": "true",
-        "MoreInfoUrl": "https://www.google.de",
-        "RemediationStrings": [
-          {
-            "Language": "en_US",
-            "Title": "ASR Rules are not enforced",
-            "Description": "Attack Surface Reduction (ASR) rules should be set to block mode. Use: Set-MpPreference -AttackSurfaceReductionRules_Actions 1."
-          },
-          {
-            "Language": "de_DE",
-            "Title": "ASR-Regeln werden nicht erzwungen",
-            "Description": "Attack Surface Reduction (ASR)-Regeln sollten im Block-Modus sein. Verwenden Sie: Set-MpPreference -AttackSurfaceReductionRules_Actions 1."
           }
         ]
       },
@@ -134,7 +96,7 @@
         ]
       },
       {
-        "SettingName": "EDRReportingEnabled",
+        "SettingName": "PUAProtectionEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
@@ -142,18 +104,18 @@
         "RemediationStrings": [
           {
             "Language": "en_US",
-            "Title": "EDR Cloud Reporting is disabled",
-            "Description": "Ensure Microsoft Defender for Endpoint is properly enrolled in Microsoft Intune."
+            "Title": "Potentially Unwanted Application (PUA) Protection is disabled",
+            "Description": "Enable PUA Protection: Set-MpPreference -PUAProtection 1."
           },
           {
             "Language": "de_DE",
-            "Title": "EDR-Cloud-Berichterstattung ist deaktiviert",
-            "Description": "Stellen Sie sicher, dass Microsoft Defender für Endpoint ordnungsgemäß in Microsoft Intune registriert ist."
+            "Title": "Schutz vor potenziell unerwünschten Anwendungen (PUA) ist deaktiviert",
+            "Description": "Aktivieren Sie den PUA-Schutz: Set-MpPreference -PUAProtection 1."
           }
         ]
       },
       {
-        "SettingName": "ControlledFolderAccessEnabled",
+        "SettingName": "CloudProtectionEnabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
         "Operand": "true",
@@ -161,16 +123,36 @@
         "RemediationStrings": [
           {
             "Language": "en_US",
-            "Title": "Controlled Folder Access is disabled",
-            "Description": "Enable Ransomware Protection: Set-MpPreference -EnableControlledFolderAccess Enabled."
+            "Title": "Cloud-Delivered Protection is disabled",
+            "Description": "Enable Cloud-Delivered Protection: Set-MpPreference -CloudBlockLevel 2."
           },
           {
             "Language": "de_DE",
-            "Title": "Überwachter Ordnerzugriff ist deaktiviert",
-            "Description": "Aktivieren Sie den Ransomware-Schutz: Set-MpPreference -EnableControlledFolderAccess Enabled."
+            "Title": "Cloud-Delivered Protection ist deaktiviert",
+            "Description": "Aktivieren Sie den Cloud-Delivered-Schutz: Set-MpPreference -CloudBlockLevel 2."
+          }
+        ]
+      },
+      {
+        "SettingName": "SampleSubmissionEnabled",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": "true",
+        "MoreInfoUrl": "https://www.google.de",
+        "RemediationStrings": [
+          {
+            "Language": "en_US",
+            "Title": "Automatic Sample Submission is disabled",
+            "Description": "Enable Automatic Sample Submission: Set-MpPreference -SubmitSamplesConsent 2."
+          },
+          {
+            "Language": "de_DE",
+            "Title": "Automatische Musterübermittlung ist deaktiviert",
+"Description": "Aktivieren Sie die automatische Musterübermittlung: Set-MpPreference -SubmitSamplesConsent 2."
           }
         ]
       }
     ]
-  }
+}
+  
   
