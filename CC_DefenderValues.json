@@ -23,7 +23,7 @@
         "SettingName": "RealTimeProtectionDisabled",
         "Operator": "IsEquals",
         "DataType": "Boolean",
-        "Operand": "false",
+        "Operand": "true",
         "MoreInfoUrl": "https://www.google.de",
         "RemediationStrings": [
           {

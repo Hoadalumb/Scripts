@@ -39,4 +39,4 @@ $SampleSubmission = Get-MpPreference | Select-Object -ExpandProperty SubmitSampl
 $ComplianceResults["SampleSubmissionEnabled"] = if ($SampleSubmission -eq 2) { $true } else { $false }
 
 # Output as JSON for Intune Custom Compliance
-$ComplianceResults | ConvertTo-Json -Compress
+return $ComplianceResults | ConvertTo-Json -Compress
